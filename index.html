@@ -7,19 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav>
             <div class="logo">
                 <a href="https://natalianevidoma-friendly-halibut-5r4p5ppq45rh7ggq-3000.preview.app.github.dev/?">
                     <img src="img/logo.png" alt="logo">
                 </a>
             </div>
-
-            <h1>Shirts</h1>
             <div class="menu">
+                <h1>Shirts</h1>
+
                 <ul class="menu__list">
                     <li><a href="#description">Description</a>
                     </li>
@@ -47,20 +49,46 @@
 
         <div id="products">
             <h2>Products</h2>
-        </div>
 
+            <div class="products__list">
+                <div class="products__list__shirt">
+                    <img src="img/shirt1.jpg" alt="shirts">
+                    <p class="price"> PRICE </p>
+                    <input type="submit" value="SELECT">
+                </div>
+                <div class="products__list__shirt">
+                    <img src="img/shirt2.jpg" alt="shirts">
+                    <p class="price"> PRICE </p>
+                    <input type="submit" value="SELECT">
+                </div>
+                <div class="products__list__shirt">
+                    <img src="img/shirt3.jpg" alt="shirts">
+                    <p class="price"> PRICE </p>
+                    <input type="submit" value="SELECT">
+                </div>
+
+            </div>
+        </div>
 
         <div id="howitworks">
             <h2>How it works</h2>
+            <div class="animation">
+                <img src="img/animation.gif" alt="shirts">
+            </div>
         </div>
+
     </main>
     <footer id="contacts">
         <form>
             <input type="text" placeholder="введіть iм'я">
             <input type="submit">
 
-
         </form>
+        <div class="callus">
+            <img src="img/callus.png" alt="phone" height="70" width="40">
+            <p> +1234569856</p>
+
+        </div>
 
     </footer>
 </body>
