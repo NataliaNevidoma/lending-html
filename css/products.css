@@ -1,0 +1,75 @@
+.image__product {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.products__list {
+    padding-top: 50px;
+    position: inherit;
+    width: 100%;
+    display: block;
+    justify-content: center;
+    top: 25%;
+    left: 25%;
+
+}
+
+.price {
+    color: var(--text-special-color);
+    font-style: italic;
+    padding: 10px;
+}
+
+.products__list__shirt {
+    padding-bottom: 50px;
+}
+
+.products__list__shirt span {
+
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    padding: 8px;
+    background: url(../img/heart1.png);
+}
+
+.products__list__shirt span:hover {
+    background-image: url(../img/heart2.png);
+    cursor: pointer;
+}
+
+.product__button {
+    background-color: var(--header-color);
+    border: ridge;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: var(--text-special-color);
+}
+
+#products h2 {
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+@media (min-width: 768px) {
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .products__list {
+        display: grid;
+        grid-template-columns: 370px 370px 370px;
+        justify-content: space-around;
+    }
+}

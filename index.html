@@ -6,91 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <div class="logo">
-                <a href="https://natalianevidoma-friendly-halibut-5r4p5ppq45rh7ggq-3000.preview.app.github.dev/?">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="menu">
-                <h1>Shirts</h1>
+    <header>
+        <div class="container">
+            <nav class="navigation">
+                <div class="navigation-logo">
 
-                <ul class="menu__list">
-                    <li><a href="#description">Description</a>
-                    </li>
-                    <li><a href="#products">Products</a>
-                    </li>
-                    <li><a href="#howitworks">How it works</a></li>
-                </ul>
-            </div>
-        </nav>
+                    <a href="#"><img width="150" src="img/logo.png" alt="logo"></a>
+
+                    <div class="navigation-burger"><span></span></div>
+                </div>
+                <div class="navigation-wrapper">
+                    <div class="navigation-pages">
+                        <a href="#description" class="navigation-pages__link">Description</a>
+                        <a href="#products" class="navigation-pages__link">Products</a>
+                        <a href="#" class="navigation-pages__link">How it works</a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
     </header>
     <main>
         <div id="description">
-            <h2>Description</h2>
-            <p class="description__text">
-                A shirt is a cloth garment for the upper body (from the neck to the waist).Originally an
-                undergarment worn exclusively by men, it has become, in American English,a catch-all term for a
-                broad variety of upper-body garments and undergarments. In British English,a shirt is more specifically
-                a garment with a collar, sleeves
-                with cuffs, and a full vertical opening with buttons or snaps (North Americans would call that a
-                "dress shirt", a specific type of collared shirt). A shirt can also be worn with a necktie under the
-                shirt collar.
-            </p>
+            <div class="fade"></div>
+            <div class="description__content">
+                <h2>Description</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quis dolores excepturi<br>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quis dolores excepturi</p>
+                <button class="button">
+                    SELECT
+                </button>
+            </div>
         </div>
-
-
         <div id="products">
             <h2>Products</h2>
 
             <div class="products__list">
                 <div class="products__list__shirt">
-                    <img src="img/shirt1.jpg" alt="shirts">
-                    <p class="price"> PRICE </p>
-                    <input type="submit" value="SELECT">
+                    <img src="img/shirt1.jpg" alt="shirts" class="image__product">
+                    <p class="price"> PRICE <span></span></p>
+                    <button class="product__button">
+                        SELECT
+                    </button>
                 </div>
                 <div class="products__list__shirt">
-                    <img src="img/shirt2.jpg" alt="shirts">
-                    <p class="price"> PRICE </p>
-                    <input type="submit" value="SELECT">
+                    <img src="img/shirt2.jpg" alt="shirts" class="image__product">
+                    <p class="price"> PRICE <span></span></p>
+                    <button class="product__button">
+                        SELECT
+                    </button>
                 </div>
                 <div class="products__list__shirt">
-                    <img src="img/shirt3.jpg" alt="shirts">
-                    <p class="price"> PRICE </p>
-                    <input type="submit" value="SELECT">
+                    <img src="img/shirt3.jpg" alt="shirts" class="image__product">
+                    <p class="price"> PRICE <span></span></p>
+                    <button class="product__button">
+                        SELECT
+                    </button>
                 </div>
 
             </div>
         </div>
-
-        <div id="howitworks">
-            <h2>How it works</h2>
-            <div class="animation">
-                <img src="img/animation.gif" alt="shirts">
-            </div>
-        </div>
-
     </main>
     <footer id="contacts">
-        <form>
-            <input type="text" placeholder="введіть iм'я">
-            <input type="submit">
+        <div class="footer-wrapper">
+            <div class="forms">
+                <form>
+                    <input type="text" placeholder="Your name" class="forms__field">
+                    <input type="submit" value="SEND" class="forms__submit">
 
-        </form>
-        <div class="callus">
-            <img src="img/callus.png" alt="phone" height="70" width="40">
-            <p> +1234569856</p>
+                </form>
+            </div>
+            <div class="callus">
+                <img src="img/callus.png" alt="phone" height="70" width="40">
+                <p> +1234569856</p>
 
+            </div>
         </div>
-
     </footer>
+
+    <script src="js/burger-menu.js"></script>
 </body>
 
 </html>

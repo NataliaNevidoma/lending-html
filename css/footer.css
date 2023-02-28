@@ -1,0 +1,42 @@
+footer {
+    background-color: var(--header-color);
+}
+
+.footer-wrapper {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 500px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+.callus p {
+    padding: 5px;
+}
+
+.form input {
+    padding: 5px;
+}
+
+.forms__submit {
+    background-color: var(--main-color);
+    border: ridge;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forms__field {
+    border: ridge;
+    padding: 15px 32px;
+    background-color: var(--main-color);
+}
